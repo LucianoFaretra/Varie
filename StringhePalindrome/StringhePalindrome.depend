@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1418318056 source:/home/ibanez89/UniBa/StringhePalindrome/Input.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"globali.h"
+	"input.h"
+
+1418314371 /home/ibanez89/UniBa/StringhePalindrome/globali.h
+
+1418318114 source:/home/ibanez89/UniBa/StringhePalindrome/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"globali.h"
+	"input.h"
+
+1418318412 /home/ibanez89/UniBa/StringhePalindrome/input.h
+

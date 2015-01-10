@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1417615317 source:/home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciBiDimensionali/AccessoAiDati.c
+	<stdlib.h>
+	<stdio.h>
+	"DatiGlobali.h"
+	"AccessoAiDati.h"
+
+1417426047 /home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciBiDimensionali/DatiGlobali.h
+
+1417616125 /home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciBiDimensionali/AccessoAiDati.h
+	"DatiGlobali.h"
+
+1417615245 source:/home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciBiDimensionali/main.c
+	<stdlib.h>
+	<stdio.h>
+	"DatiGlobali.h"
+	"InputOutput.h"
+	"Operazioni.h"
+
+1417616203 /home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciBiDimensionali/InputOutput.h
+	"DatiGlobali.h"
+
+1417616313 /home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciBiDimensionali/Operazioni.h
+
+1417616372 source:/home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciBiDimensionali/Operazioni.c
+	<stdlib.h>
+	<stdio.h>
+	"DatiGlobali.h"
+	"Operazioni.h"
+	"InputOutput.h"
+	"AccessoAiDati.h"
+
+1417616235 source:/home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciBiDimensionali/InputOutput.c
+	<stdlib.h>
+	<stdio.h>
+	"InputOutput.h"
+	"AccessoAiDati.h"
+

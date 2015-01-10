@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1417617902 source:/home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciMonoDimensionaliProgetto/main.c
+	<stdlib.h>
+	<stdio.h>
+	"DatiGlobali.h"
+	"InputOutput.h"
+	"Operazioni.h"
+
+1417426047 /home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciMonoDimensionaliProgetto/DatiGlobali.h
+
+1417613494 /home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciMonoDimensionaliProgetto/InputOutput.h
+
+1417613487 /home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciMonoDimensionaliProgetto/Operazioni.h
+
+1417613506 source:/home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciMonoDimensionaliProgetto/Operazioni.c
+	<stdlib.h>
+	<stdio.h>
+	"DatiGlobali.h"
+	"Operazioni.h"
+	"InputOutput.h"
+	"AccessoAiDati.h"
+
+1417613538 source:/home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciMonoDimensionaliProgetto/AccessoAiDati.c
+	<stdlib.h>
+	<stdio.h>
+	"DatiGlobali.h"
+	"AccessoAiDati.h"
+
+1417685091 source:/home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciMonoDimensionaliProgetto/InputOutput.c
+	<stdlib.h>
+	<stdio.h>
+	"InputOutput.h"
+	"AccessoAiDati.h"
+
+1417544379 /home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciMonoDimensionaliProgetto/AccessoAiDati.h
+
