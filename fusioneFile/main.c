@@ -93,27 +93,9 @@
 
 
 */
-#include <stdlib.h>
-#include <stdio.h>
-#include <ctype.h>
-#define LUNGHEZZACODICEVOLO 5
-#define LUNGHEZZANOMICITTA 20
-
-
-
-typedef struct DatiDiVolo{
-    char CodiceVolo[LUNGHEZZACODICEVOLO];
-    float OrarioPartenza;
-    float OrarioArrivo;
-    char Destinazione[LUNGHEZZANOMICITTA];
-    unsigned int PostiTotali;
-    double Prezzo;
-};
-
-typedef struct AumentoPrezzi{
-    char CodiceVolo[LUNGHEZZACODICEVOLO];
-    double NuovoPrezzo;
-};
+#include "globale.h"
+#include "fusione.h"
+#include "stampa.h"
 
 int main( void )
 {
@@ -126,67 +108,4 @@ int main( void )
 return 0;
 }
 
-void fusione( char *messaggioErrore, char *messaggioFileNonTrovato )
-{
-    FILE *VoliPtr;
-    FILE *AumentiPtr;
-    FILE *VoliAggiornatiPtr;
-    size_t contatoreRighe = 0;
 
-    DatiDiVolo voliFiumicino[10]; //Dichiara 10 possibili voli
-    memset(voliFiumicino, 0, 10); //Inizializza l'array
-
-    if( ( VoliPtr = fopen("Voli.txt", "r") ) == NULL ){
-        puts(messaggioFileNonTrovato);
-    }
-    else{
-        while( !feof(VoliPtr) ){
-            fscanf(VoliPtr, "%4s %f %19s %f %u %lf", voliFiumicino[contatoreRighe].CodiceVolo, voliFiumicino[contatoreRighe].OrarioPartenza, voliFiumicino[contatoreRighe].Destinazione,
-                                                        voliFiumicino[contatoreRighe].OrarioArrivo, voliFiumicino[contatoreRighe].PostiTotali, voliFiumicino[contatoreRighe].Prezzo);
-        contatoreRighe++;
-        }
-    }
-
-    if( ( AumentiPtr = fopen("Aumenti.txt", "r") ) == NULL ){
-        puts(messaggioFileNonTrovato);
-    }
-    else{
-            Mentre ci sono ancora righe
-                Carica i dati contenuti nel file nella struttura AumentoPrezzi
-                Passa alla riga successiva
-            Fine mentre
-    }
-
-    Mentre ci sono ancora CodiceVolo dellaa struttura AumentoPrezzi da confrontare
-        Se il CodiceVolo della struttura AumentoPrezzi non e' presente nella struttura DatiDiVolo
-            Allora
-                Stampa messaggioErrore
-            Altrimenti
-                Salva i DatiDiVolo con la variabile NuovoPrezzo nel file di testo VoliAggiornati.txt
-        Fine Se
-        Passa a CodiceVolo della struttura AumentoPrezzi successivo
-    Fine Mentre
-
-return;
-}
-
-void stampa( char *messaggioFileNonTrovato )
-{
-
-    Se non e' presente il file Voli.txt
-    Allora
-        Stampa messaggioFileNonTrovato
-    Altrimenti
-    Se non e' presente il file VoliAggiornati.txt
-        Allora
-            Stampa messaggioFileNonTrovato
-        Altrimenti
-            Mentre ci sono ancora righe
-                Stampa una riga del file Voli.txt
-                Stampa una riga del file VoliAggiornati.txt
-            Fine mentre
-        Fine Se
-    Fine Se
-
-return;
-}
