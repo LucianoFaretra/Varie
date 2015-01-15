@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1421361265 source:c:\users\ibanez89.fisso\documents\github\varie\fusionefile\fusione.c
+	"globale.h"
+
+1421359924 c:\users\ibanez89.fisso\documents\github\varie\fusionefile\globale.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1421359935 source:c:\users\ibanez89.fisso\documents\github\varie\fusionefile\stampa.c
+	"globale.h"
+
+1421360119 source:c:\users\ibanez89.fisso\documents\github\varie\fusionefile\main.c
+	"globale.h"
+	"fusione.h"
+	"stampa.h"
+
+1421360000 c:\users\ibanez89.fisso\documents\github\varie\fusionefile\fusione.h
+
+1421359971 c:\users\ibanez89.fisso\documents\github\varie\fusionefile\stampa.h
+
