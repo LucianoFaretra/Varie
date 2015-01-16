@@ -53,15 +53,15 @@
                 Fine mentre
         Fine Se
 
-        Mentre ci sono ancora CodiceVolo della struttura AumentoPrezzi da confrontare
-            Se il CodiceVolo della struttura AumentoPrezzi non e' presente nella struttura DatiDiVolo
-                Allora
-                    Stampa messaggioErrore
-                Altrimenti
-                    Salva i DatiDiVolo con la variabile NuovoPrezzo nel file di testo VoliAggiornati.txt
-            Fine Se
-            Passa a CodiceVolo della struttura AumentoPrezzi successivo
-        Fine Mentre
+        mentre ci sono ancora voli da analizzare
+            Controlla l'aumento 1 con il volo 1
+                Se i codici di volo sono uguali
+                    Allora
+                        salva il volo con il prezzo aggiornato
+                    Altrimenti
+                        mostra messaggio d'errore
+                Fine se
+        Passa a volo successivo
 
     ***********************************************************************************************************************************************************
 

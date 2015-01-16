@@ -5,12 +5,8 @@ void stampa( char *messaggioFileNonTrovato )
     FILE *VoliPtr;
     FILE *VoliAggiornatiPtr;
 
-    char CodiceVolo[LUNGHEZZACODICEVOLO];
-    float OrarioPartenza;
-    float OrarioArrivo;
-    char Destinazione[LUNGHEZZANOMICITTA];
-    unsigned int PostiTotali;
-    double Prezzo;
+    char bufferLettura[100];
+
 
     if((VoliPtr = fopen("Voli.txt", "r")) == NULL ){
         puts(messaggioFileNonTrovato);
@@ -20,11 +16,11 @@ void stampa( char *messaggioFileNonTrovato )
             puts(messaggioFileNonTrovato);
         }
         else{
-            while( !feof( VoliAggiornatiPtr ) ){
-                fscanf(VoliPtr, "%4s %f %19s %f %u %lf", CodiceVolo, &OrarioPartenza, Destinazione, &OrarioArrivo, &PostiTotali, &Prezzo);
-                printf("%4s %.2f %19s %.2f %u %.2lf\n", CodiceVolo, OrarioPartenza, Destinazione, OrarioArrivo, PostiTotali, Prezzo);
-                fscanf(VoliAggiornatiPtr, "%4s %f %19s %f %u %lf", CodiceVolo, &OrarioPartenza, Destinazione, &OrarioArrivo, &PostiTotali, &Prezzo);
-                printf("%4s %.2f %19s %.2f %u %.2lf\n", CodiceVolo, OrarioPartenza, Destinazione, OrarioArrivo, PostiTotali, Prezzo);
+            while( !feof( VoliPtr ) ){
+                 fgets(bufferLettura, 100, VoliPtr);
+                 printf("%s", bufferLettura);
+                 fgets(bufferLettura, 100, VoliAggiornatiPtr);
+                 printf("%s", bufferLettura);
             }
         }
     }

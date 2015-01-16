@@ -6,8 +6,9 @@ void fusione( char *messaggioErrore, char *messaggioFileNonTrovato )
     FILE *AumentiPtr;
     FILE *VoliAggiornatiPtr;
     size_t contatoreRighe = 0;
+    unsigned int numeroVoli = 0;
     unsigned int numeroAumenti = 0;
-    unsigned int numeroInserimenti = 0;
+
 
     DatiDiVolo voliFiumicino[MAXNUMEROVOLIAEREI]; //Dichiara 10 possibili voli
     memset(voliFiumicino, 0, MAXNUMEROVOLIAEREI); //Inizializza l'array
@@ -21,10 +22,10 @@ void fusione( char *messaggioErrore, char *messaggioFileNonTrovato )
     }
     else{
         while( !feof(VoliPtr) ){
-            fscanf(VoliPtr, "%4s %f %19s %f %u %lf\n", voliFiumicino[contatoreRighe].CodiceVolo, &voliFiumicino[contatoreRighe].OrarioPartenza, voliFiumicino[contatoreRighe].Destinazione,
-                                                        &voliFiumicino[contatoreRighe].OrarioArrivo, &voliFiumicino[contatoreRighe].PostiTotali, &voliFiumicino[contatoreRighe].Prezzo );
+            fscanf(VoliPtr, "%4s%f%19s%f%u%lf", voliFiumicino[contatoreRighe].CodiceVolo, &voliFiumicino[contatoreRighe].OrarioPartenza, voliFiumicino[contatoreRighe].Destinazione,
+                                                       &voliFiumicino[contatoreRighe].OrarioArrivo, &voliFiumicino[contatoreRighe].PostiTotali, &voliFiumicino[contatoreRighe].Prezzo );
         contatoreRighe++;
-        numeroInserimenti++;
+        numeroVoli++;
         }
     }
     fclose(VoliPtr);
@@ -35,34 +36,34 @@ void fusione( char *messaggioErrore, char *messaggioFileNonTrovato )
     }
     else{
         while( !feof(AumentiPtr) ){
-            fscanf(AumentiPtr, "%4s %lf", aumentiVoliFiumicino[contatoreRighe].CodiceVolo, &aumentiVoliFiumicino[contatoreRighe].NuovoPrezzo );
-
+            fscanf(AumentiPtr, "%4s%lf", aumentiVoliFiumicino[contatoreRighe].CodiceVolo, &aumentiVoliFiumicino[contatoreRighe].NuovoPrezzo );
         contatoreRighe++;
         numeroAumenti++;
         }
     }
     fclose(AumentiPtr);
 
-    printf("Numero aumenti; %d\n Numero voli: %d\n", numeroAumenti, numeroInserimenti);
-    if( ( VoliAggiornatiPtr = fopen("VoliAggiornati.txt", "w")) == NULL){
-        puts(messaggioFileNonTrovato);
+    if(numeroVoli != numeroAumenti){
+        puts("Attenzione, il numero dei voli non combaciano con il numero degli aumenti");
     }
     else{
-        do{
-            contatoreRighe = 0;
-            while(contatoreRighe <= numeroInserimenti ){
-                if( aumentiVoliFiumicino[numeroAumenti].CodiceVolo != voliFiumicino[contatoreRighe].CodiceVolo ){
-                    puts(messaggioErrore);
+        if( ( VoliAggiornatiPtr = fopen("VoliAggiornati.txt", "w") ) == NULL ){
+            puts(messaggioFileNonTrovato);
+        }
+        else{
+            numeroVoli = 0;
+            while(numeroVoli != numeroAumenti){
+                if( 0 == strcmp( voliFiumicino[numeroVoli].CodiceVolo, aumentiVoliFiumicino[numeroVoli].CodiceVolo )){
+                    fprintf( VoliAggiornatiPtr, "%s %.2f %s %.2f %u %.2lf\n", aumentiVoliFiumicino[numeroVoli].CodiceVolo, voliFiumicino[numeroVoli].OrarioPartenza, voliFiumicino[numeroVoli].Destinazione, voliFiumicino[numeroVoli].OrarioArrivo, voliFiumicino[numeroVoli].PostiTotali, aumentiVoliFiumicino[numeroVoli].NuovoPrezzo );
                 }
                 else{
-                    fprintf( VoliAggiornatiPtr, "%4s %f %19s %f %u %lf\n", aumentiVoliFiumicino[numeroAumenti].CodiceVolo, voliFiumicino[contatoreRighe].OrarioPartenza, voliFiumicino[contatoreRighe].Destinazione, voliFiumicino[contatoreRighe].OrarioArrivo, voliFiumicino[contatoreRighe].PostiTotali, aumentiVoliFiumicino[numeroAumenti].NuovoPrezzo );
-                    }
-            contatoreRighe++;
+                    puts(messaggioErrore);
+                }
+            numeroVoli++;
             }
-            numeroAumenti--;
-        }while(numeroAumenti == 0);
-    fclose(VoliAggiornatiPtr);
+        }
     }
+    fclose(VoliAggiornatiPtr);
 
 return;
 }
