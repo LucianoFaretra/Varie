@@ -22,9 +22,18 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="fusione.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fusione.h" />
+		<Unit filename="globali.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="stampa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="stampa.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
