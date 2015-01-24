@@ -15,7 +15,7 @@ ScrivereElemento(matrice, righe, colonne+1, valore); //Reset Numero Colonne
 
 printf("\n===========================================================================\n");
 printf("\n\t\tInserire le Righe e le Colonne della Matrice numero: %d \n", n);
-printf("\tNotaBene: una matrice non può essere composta 1 riga ed 1 colonna\n");
+printf("\tNotaBene: una matrice non puo' essere composta 1 riga ed 1 colonna\n");
 printf("\n===========================================================================\n");
 
 while (LetturaElemento(matrice, righe, colonne) <= 1.000000 && LetturaElemento(matrice, righe, colonne+1) <= 1.000000)
@@ -80,7 +80,7 @@ int righe = 0;
 int colonne = 0;
 
 printf("\n===========================================================================\n");
-printf("La matrice di risulta è :\n");
+printf("La matrice di risulta e' :\n");
 i = 0;
 while(i < LetturaElemento(matrice, righe, colonne))
     {

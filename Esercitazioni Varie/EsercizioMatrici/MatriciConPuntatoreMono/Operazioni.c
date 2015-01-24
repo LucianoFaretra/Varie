@@ -46,9 +46,6 @@ while(i < LetturaElemento(matrice, righe, colonne))
     i++;
     }
 /* FINE BLOCCO DI CALCOLO*/
-
-free(matrice);
-
 return;
 }
 
@@ -61,9 +58,8 @@ int j = 0;
 int c = 0;
 int righe = 0;
 int colonne = 0;
-float valore = 0;
-float *risulta = NULL;
-risulta = (float *)malloc(sizeof(float));
+float valore;
+float risulta;
 
 /* INIZIO BLOCCO DI INPUT*/
 while(LetturaElemento(matrice, righe, colonne+1) != LetturaElemento(matrice2, righe, colonne) || LetturaElemento(matrice, righe, colonne) == 0.000000 || LetturaElemento(matrice2, righe, colonne) == 0.000000 || LetturaElemento(matrice, righe, colonne+1) == 0.000000 || LetturaElemento(matrice2, righe, colonne+1) == 0.000000)
@@ -99,8 +95,8 @@ while(i < LetturaElemento(matrice, righe, colonne))
             c = 0;
             while(c < LetturaElemento(matrice, righe, colonne+1))
             {
-            risulta[c] = LetturaElemento(matrice, i, c+2)*LetturaElemento(matrice2, c, j+2);
-            valore = LetturaElemento(matrice3, i, j+2) + risulta[c];
+            risulta = LetturaElemento(matrice, i, c+2)*LetturaElemento(matrice2, c, j+2);
+            valore = LetturaElemento(matrice3, i, j+2) + risulta;
             ScrivereElemento(matrice3, i, j+2, valore);
             c++;
             }
@@ -109,10 +105,6 @@ while(i < LetturaElemento(matrice, righe, colonne))
     i++;
     }
 /* FINE BLOCCO DI CALCOLO*/
-
-free(matrice);
-free(matrice2);
-free(risulta);
 return;
 }
 
@@ -148,9 +140,6 @@ while(i < LetturaElemento(matrice, righe, colonne))
         }
     i++;
     }
-
-free(matrice);
-
 return;
 }
 
@@ -200,8 +189,5 @@ while(i < LetturaElemento(matrice, righe, colonne))
     i++;
     }
 /* FINE BLOCCO DI CALCOLO*/
-
-free(matrice3);
-
 return;
 }

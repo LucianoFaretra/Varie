@@ -2,20 +2,20 @@
 #include <stdio.h>
 
 #include "DatiGlobali.h"
-#include "InputOutput.h"
-#include "Operazioni.h"
+//#include "InputOutput.h"
+//#include "Operazioni.h"
+
+struct StrutturaMatrice{
+    int numeroRighe;
+    int numeroColonne;
+    float elementiMatrice[DIM][DIM];
+};
 
 int main()
 {
 
-typedef struct
-    {
-    int numero_righe;
-    int numero_colonne;
-    int elementi_matrice;
-    } matrice;
-
-
+printf("%d", sizeof(matrice[0]));
+/*
 //float matrice[DIM][DIM] = {{0}};
 //float matrice2[DIM][DIM] = {{0}};
 //float matrice3[DIM][DIM] = {{0}};
@@ -76,6 +76,6 @@ else if(Decisione == 4)
 printf("\n\nGrazie per aver scelto il Nostro Programma, premi invio per uscire. \n\n\n Developed by Transistori");
 getchar();
 getchar();
-
+*/
 return 0;
 }

@@ -1,1 +1,0 @@
-#define DIM 100

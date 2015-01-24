@@ -1,0 +1,56 @@
+# depslib dependency file v1.0
+1417615317 source:/home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciBiDimensionali_Struct/AccessoAiDati.c
+	<stdlib.h>
+	<stdio.h>
+	"DatiGlobali.h"
+	"AccessoAiDati.h"
+
+1417426047 /home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciBiDimensionali_Struct/DatiGlobali.h
+
+1417616125 /home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciBiDimensionali_Struct/AccessoAiDati.h
+	"DatiGlobali.h"
+
+1417616235 source:/home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciBiDimensionali_Struct/InputOutput.c
+	<stdlib.h>
+	<stdio.h>
+	"InputOutput.h"
+	"AccessoAiDati.h"
+
+1417616203 /home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciBiDimensionali_Struct/InputOutput.h
+	"DatiGlobali.h"
+
+1419933994 source:c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\eserciziomatrici\matricibidimensionali_struct\accessoaidati.c
+	<stdlib.h>
+	<stdio.h>
+	"DatiGlobali.h"
+	"AccessoAiDati.h"
+
+1422107428 c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\eserciziomatrici\matricibidimensionali_struct\datiglobali.h
+
+1419933994 c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\eserciziomatrici\matricibidimensionali_struct\accessoaidati.h
+	"DatiGlobali.h"
+
+1419933994 source:c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\eserciziomatrici\matricibidimensionali_struct\inputoutput.c
+	<stdlib.h>
+	<stdio.h>
+	"InputOutput.h"
+	"AccessoAiDati.h"
+
+1419933994 c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\eserciziomatrici\matricibidimensionali_struct\inputoutput.h
+	"DatiGlobali.h"
+
+1422116602 source:c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\eserciziomatrici\matricibidimensionali_struct\main.c
+	<stdlib.h>
+	<stdio.h>
+	"DatiGlobali.h"
+
+1419933994 source:c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\eserciziomatrici\matricibidimensionali_struct\operazioni.c
+	<stdlib.h>
+	<stdio.h>
+	"DatiGlobali.h"
+	"Operazioni.h"
+	"InputOutput.h"
+	"AccessoAiDati.h"
+
+1422111093 c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\eserciziomatrici\matricibidimensionali_struct\operazioni.h
+

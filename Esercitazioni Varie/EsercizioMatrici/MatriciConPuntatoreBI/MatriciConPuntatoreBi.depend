@@ -1,0 +1,104 @@
+# depslib dependency file v1.0
+1418492712 source:/home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciConPuntatore/main.c
+	<stdlib.h>
+	<stdio.h>
+	"InputOutput.h"
+	"Operazioni.h"
+
+1417426047 /home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciConPuntatore/DatiGlobali.h
+
+1417617742 /home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciConPuntatore/InputOutput.h
+
+1417617794 /home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciConPuntatore/Operazioni.h
+
+1418495603 source:/home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciConPuntatore/AccessoAiDati.c
+	<stdlib.h>
+	<stdio.h>
+	"AccessoAiDati.h"
+
+1417617695 /home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciConPuntatore/AccessoAiDati.h
+
+1418494676 source:/home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciConPuntatore/Operazioni.c
+	<stdlib.h>
+	<stdio.h>
+	"Operazioni.h"
+	"InputOutput.h"
+	"AccessoAiDati.h"
+
+1418491109 source:/home/ibanez89/UniBa/EsercizioMatriciAllIn/MatriciConPuntatore/InputOutput.c
+	<stdlib.h>
+	<stdio.h>
+	"InputOutput.h"
+	"AccessoAiDati.h"
+
+1422102156 source:c:\users\ibanez89.fisso\documents\github\varie\eserciziomatriciallin\matriciconpuntatore\accessoaidati.c
+	<stdlib.h>
+	<stdio.h>
+	"AccessoAiDati.h"
+	"DatiGlobali.h"
+
+1419933994 c:\users\ibanez89.fisso\documents\github\varie\eserciziomatriciallin\matriciconpuntatore\accessoaidati.h
+
+1422101958 source:c:\users\ibanez89.fisso\documents\github\varie\eserciziomatriciallin\matriciconpuntatore\inputoutput.c
+	<stdlib.h>
+	<stdio.h>
+	"InputOutput.h"
+	"AccessoAiDati.h"
+
+1422101958 c:\users\ibanez89.fisso\documents\github\varie\eserciziomatriciallin\matriciconpuntatore\inputoutput.h
+
+1422100946 source:c:\users\ibanez89.fisso\documents\github\varie\eserciziomatriciallin\matriciconpuntatore\operazioni.c
+	<stdlib.h>
+	<stdio.h>
+	"Operazioni.h"
+	"InputOutput.h"
+	"AccessoAiDati.h"
+
+1419933994 c:\users\ibanez89.fisso\documents\github\varie\eserciziomatriciallin\matriciconpuntatore\operazioni.h
+
+1422101811 source:c:\users\ibanez89.fisso\documents\github\varie\eserciziomatriciallin\matriciconpuntatore\main.c
+	<stdlib.h>
+	<stdio.h>
+	"DatiGlobali.h"
+	"InputOutput.h"
+	"Operazioni.h"
+
+1422100500 c:\users\ibanez89.fisso\documents\github\varie\eserciziomatriciallin\matriciconpuntatore\datiglobali.h
+
+1422104824 source:c:\users\ibanez89.fisso\documents\github\varie\eserciziomatriciallin\matriciconpuntatorebi\accessoaidati.c
+	<stdlib.h>
+	<stdio.h>
+	"AccessoAiDati.h"
+	"DatiGlobali.h"
+
+1422104784 c:\users\ibanez89.fisso\documents\github\varie\eserciziomatriciallin\matriciconpuntatorebi\accessoaidati.h
+	"DatiGlobali.h"
+
+1422100500 c:\users\ibanez89.fisso\documents\github\varie\eserciziomatriciallin\matriciconpuntatorebi\datiglobali.h
+
+1422104839 source:c:\users\ibanez89.fisso\documents\github\varie\eserciziomatriciallin\matriciconpuntatorebi\inputoutput.c
+	<stdlib.h>
+	<stdio.h>
+	"InputOutput.h"
+	"AccessoAiDati.h"
+
+1422104784 c:\users\ibanez89.fisso\documents\github\varie\eserciziomatriciallin\matriciconpuntatorebi\inputoutput.h
+	"DatiGlobali.h"
+
+1422104864 source:c:\users\ibanez89.fisso\documents\github\varie\eserciziomatriciallin\matriciconpuntatorebi\operazioni.c
+	<stdlib.h>
+	<stdio.h>
+	"Operazioni.h"
+	"InputOutput.h"
+	"AccessoAiDati.h"
+
+1422105469 c:\users\ibanez89.fisso\documents\github\varie\eserciziomatriciallin\matriciconpuntatorebi\operazioni.h
+	"DatiGlobali.h"
+
+1422105068 source:c:\users\ibanez89.fisso\documents\github\varie\eserciziomatriciallin\matriciconpuntatorebi\main.c
+	<stdlib.h>
+	<stdio.h>
+	"DatiGlobali.h"
+	"InputOutput.h"
+	"Operazioni.h"
+
