@@ -19,3 +19,23 @@
 
 1421359971 c:\users\ibanez89.fisso\documents\github\varie\fusionefile\stampa.h
 
+1421428580 source:c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\esercitazioni pre esame\fusionefile\fusione.c
+	"globale.h"
+
+1421359924 c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\esercitazioni pre esame\fusionefile\globale.h
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1421426829 source:c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\esercitazioni pre esame\fusionefile\main.c
+	"globale.h"
+	"fusione.h"
+	"stampa.h"
+
+1421360000 c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\esercitazioni pre esame\fusionefile\fusione.h
+
+1421359971 c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\esercitazioni pre esame\fusionefile\stampa.h
+
+1421428497 source:c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\esercitazioni pre esame\fusionefile\stampa.c
+	"globale.h"
+

@@ -24,3 +24,28 @@
 	"fusione.h"
 	"stampa.h"
 
+1421780642 source:c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\esercitazioni pre esame\fusionefile2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"globali.h"
+	"fusione.h"
+	"stampa.h"
+
+1421780966 c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\esercitazioni pre esame\fusionefile2\globali.h
+
+1421780162 c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\esercitazioni pre esame\fusionefile2\fusione.h
+
+1421780601 c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\esercitazioni pre esame\fusionefile2\stampa.h
+
+1421781417 source:c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\esercitazioni pre esame\fusionefile2\stampa.c
+	<stdio.h>
+	<stdlib.h>
+	"stampa.h"
+
+1422285715 source:c:\users\ibanez89.fisso\documents\github\varie\esercitazioni varie\esercitazioni pre esame\fusionefile2\fusione.c
+	<stdio.h>
+	<stdlib.h>
+	"globali.h"
+	"fusione.h"
+	"stampa.h"
+

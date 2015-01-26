@@ -27,8 +27,8 @@ CommandLine=
 Folders=Headers,Sorgente
 IncludeVersionInfo=0
 SupportXPThemes=0
-CompilerSet=1
-CompilerSettings=0000000000111000001000000
+CompilerSet=2
+CompilerSettings=0000000000000000100000000
 UnitCount=6
 
 [VersionInfo]

@@ -106,9 +106,9 @@ FILE *AumentiPtr;
                     rewind(VoliPtr);
                 }
             }
+            stampa( VoliPtr, VoliAggiornatiPtr );
         }
+        fclose(AumentiPtr);
     }
-    fclose(AumentiPtr);
-    stampa( VoliPtr, VoliAggiornatiPtr );
 return;
 }
