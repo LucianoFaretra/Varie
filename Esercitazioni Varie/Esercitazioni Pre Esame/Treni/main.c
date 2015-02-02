@@ -153,7 +153,6 @@ Prezzo          Prezzo del biglietto contenuto in treno1            reale
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define MAXTRENI 20
 #define MAXBUFFER 80
 
 typedef struct{
@@ -215,10 +214,9 @@ float massimo;
                 mostraPrezzo(alfa, minimo, massimo);
           }
           else{
-          //Esci
           }
     }
-fclose(alpha);
+fclose(alfa);
   system("PAUSE");
   return 0;
 }
@@ -231,7 +229,6 @@ char buffer[MAXBUFFER]; /*buffer di lettura da file*/
               puts("Funzione visualizza puntatore nullo");
      }
      else{
-          rewind(alfa);
           while(!feof(alfa)){
                 fgets(buffer, (MAXBUFFER - 1), alfa);
                 puts(buffer);
@@ -246,52 +243,37 @@ return;
 
 void mostraPartenze(FILE* alfa, char partenza[])
 {
-
-Treni treno[MAXTRENI] = {{"", "", 0.00, "", 0.00, 0.00}};
-unsigned int numeroTreni = 0;
-size_t indiceArray = 0;
+Treni treno = {"", "", 0.00, "", 0.00, 0.00};
 
      if(alfa == NULL){
              puts("Puntatore alfa nella funzione mostraPartenze nullo");
      }
      else{
            while(!feof(alfa)){
-                fscanf(alfa, "%5s %20s %f %20s %f %f", treno[numeroTreni].CodiceTreno, treno[numeroTreni].Partenza, &treno[numeroTreni].OraPartenza, treno[numeroTreni].Arrivo, &treno[numeroTreni].OraArrivo, &treno[numeroTreni].Prezzo);
-                numeroTreni++;
+                fscanf(alfa, "%5s %20s %f %20s %f %f", treno.CodiceTreno, treno.Partenza, &treno.OraPartenza, treno.Arrivo, &treno.OraArrivo, &treno.Prezzo);
+                if( strcmp(treno.Partenza, partenza) == 0 ){
+                    mostra(treno);
+                }
            }
      }
-
-    while( indiceArray < numeroTreni ){
-       if( strcmp(treno[indiceArray].Partenza, partenza) == 0 ){
-            mostra(treno[indiceArray]);
-        }
-        indiceArray++;
-    }
 
 return;
 }
 
 void mostraPrezzo(FILE* alfa, float minimo, float massimo)
 {
-Treni treno[MAXTRENI] = {{"", "", 0.00, "", 0.00, 0.00}};
-unsigned int numeroTreni = 0;
-size_t indiceArray = 0;
+Treni treno = {"", "", 0.00, "", 0.00, 0.00};
 
      if(alfa == NULL){
          puts("Puntatore alfa nella funzione mostraPartenze nullo");
      }
      else{
           while(!feof(alfa)){
-          fscanf(alfa, "%5s %20s %f %20s %f %f", treno[numeroTreni].CodiceTreno, treno[numeroTreni].Partenza, &treno[numeroTreni].OraPartenza, treno[numeroTreni].Arrivo, &treno[numeroTreni].OraArrivo, &treno[numeroTreni].Prezzo);
-          numeroTreni++;
-          }
-
-         while( indiceArray < numeroTreni ){
-           if( treno[indiceArray].Prezzo >= minimo && treno[indiceArray].Prezzo <= massimo ){
-           mostra(treno[indiceArray]);
+            fscanf(alfa, "%5s %20s %f %20s %f %f", treno.CodiceTreno, treno.Partenza, &treno.OraPartenza, treno.Arrivo, &treno.OraArrivo, &treno.Prezzo);
+            if( treno.Prezzo >= minimo && treno.Prezzo <= massimo ){
+                mostra(treno);
             }
-            indiceArray++;
-        }
+          }
     }
 return;
 }
