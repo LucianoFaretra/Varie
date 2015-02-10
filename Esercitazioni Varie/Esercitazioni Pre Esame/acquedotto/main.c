@@ -69,39 +69,39 @@
     Somma a importoTotaleUnita le spese di fognatura
     Somma a importoTotaleUnita le spese di deputazione
     Stampa (importoTotaleUnita)
-    
+
     Casi di test:
     numeroUnitaAbi = 2 casi di test
     consumoAnnualeModulo = 2 casi di test
-    
+
     Totale 4 casi di test riducibili a 3
-    
+
     Caso 1:
     numeroUnitaAbi = -1
     consumoAnnualeModulo 1000
-    
+
     Output:
     Il consumo totale per un unita abitativa e pari a: 12.55
     I consumi totali del modulo abitativo composto da [NUMERORANDOM] unita con 1000 MC consumati sono: [NUMERORANDOM]
 
     Caso 2
-    
+
     numeroUnitaAbi = 10
     consumoAnnualeModulo -1
-    
+
     Output:
     Il consumo totale per un unita abitativa e pari a: 13.76
     I consumi totali del modulo abitativo composto da 10 unita con -1 MC consumati sono: 137.60
 
-    Caso 2
-    
+    Caso 3
+
     numeroUnitaAbi = 10
     consumoAnnualeModulo 1000
-    
+
     Output:
     Il consumo totale per un unita abitativa e pari a: 119.44
     I consumi totali del modulo abitativo composto da 10 unita con 1000 MC consumati sono: 1194.36
-    
+
 
  *********************************************************************************
  stampaTotaliUnita(float importoTotaleUnita, DatiInput DatiConsumi)
