@@ -36,3 +36,32 @@
 	"InputOutput.h"
 	"AccessoAiDati.h"
 
+1425771978 source:/home/ibanez89/UniBa/Varie/Esercitazioni Varie/EsercizioMatrici/MatriciBiDimensionali/main.c
+	<stdlib.h>
+	<stdio.h>
+	"DatiGlobali.h"
+	"InputOutput.h"
+	"Operazioni.h"
+
+1425771978 /home/ibanez89/UniBa/Varie/Esercitazioni Varie/EsercizioMatrici/MatriciBiDimensionali/DatiGlobali.h
+
+1425771978 /home/ibanez89/UniBa/Varie/Esercitazioni Varie/EsercizioMatrici/MatriciBiDimensionali/InputOutput.h
+	"DatiGlobali.h"
+
+1425771978 /home/ibanez89/UniBa/Varie/Esercitazioni Varie/EsercizioMatrici/MatriciBiDimensionali/Operazioni.h
+
+1425771978 source:/home/ibanez89/UniBa/Varie/Esercitazioni Varie/EsercizioMatrici/MatriciBiDimensionali/AccessoAiDati.c
+	<stdlib.h>
+	<stdio.h>
+	"DatiGlobali.h"
+	"AccessoAiDati.h"
+
+1425771978 /home/ibanez89/UniBa/Varie/Esercitazioni Varie/EsercizioMatrici/MatriciBiDimensionali/AccessoAiDati.h
+	"DatiGlobali.h"
+
+1425771978 source:/home/ibanez89/UniBa/Varie/Esercitazioni Varie/EsercizioMatrici/MatriciBiDimensionali/InputOutput.c
+	<stdlib.h>
+	<stdio.h>
+	"InputOutput.h"
+	"AccessoAiDati.h"
+

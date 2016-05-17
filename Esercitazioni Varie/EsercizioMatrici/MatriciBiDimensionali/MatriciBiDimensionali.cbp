@@ -31,12 +31,26 @@
 		<Compiler>
 			<Add option="-Weverything" />
 		</Compiler>
+		<Unit filename="AccessoAiDati.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="AccessoAiDati.h" />
+		<Unit filename="DatiGlobali.h" />
+		<Unit filename="InputOutput.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="InputOutput.h" />
+		<Unit filename="Operazioni.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Operazioni.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>
 			<code_completion />
 			<debugger />
+			<envvars />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
